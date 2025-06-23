@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 20 # any LTS ≥20
 
-      - run: npm ci
+      - run: npm install --force
       - run: npm run build # ➜ dist/
 
       - uses: actions/upload-pages-artifact@v3
